@@ -17,21 +17,6 @@
 
 ---
 
-## 🧱 Architecture
-```mermaid
-flowchart TD
-    A[GitHub Actions Schedules] --> B[Generate Fake Data
-(scripts/generate_fake_data.py)]
-    B --> C[Process & Model KPIs
-(scripts/process_data.py)]
-    C --> D[Build Dashboard (HTML)
-(scripts/build_dashboard.py)]
-    C --> E[Weekly Recap PDF
-(scripts/generate_weekly_recap.py)]
-    D --> F[GitHub Pages (/docs)]
-    E --> F
-```
-
 **Entities & KPIs**
 - Markets: Dallas, Austin, San Antonio, Houston
 - Accounts: Tom Thumb, Kroger, Central Market, Whole Foods, Market Street
@@ -109,6 +94,3 @@ python scripts/generate_weekly_recap.py
 - All data are randomly generated with reasonable, CPWS-like distributions.
 
 ---
-
-## 📜 License
-MIT
